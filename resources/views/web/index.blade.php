@@ -62,7 +62,7 @@
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                     <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                    <li><a href=""><i class="fa fa-compact-disc"></i>Intranet</a></li>
+                    <li><a href="{{url("login")}}"><i class="fa fa-compact-disc"></i>Intranet</a></li>
                 </ul>
             </div>
         </div>
@@ -101,8 +101,8 @@
                         <li class="dropdown submenu">
                             <a href="blog-details.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Repuestos <i class="mdi mdi-arrow-down-drop-circle-outline"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="venta.html">General</a></li>
-                                <li><a href="venta.html">Promociones</a></li>
+                                <li><a href="{{url("venta")}}">General</a></li>
+                                <li><a href="{{url("venta")}}">Promociones</a></li>
                             </ul>
                         </li>
                         <li><a href="#contactenos">Contactenos</a></li>
