@@ -2,10 +2,310 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c14f8931-2373-417b-a1be-e7e34d29134d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/api/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/api/tweet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/api/twitteroauth/OAuth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/api/twitteroauth/twitteroauth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/materialdesignicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/css/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/fonts/materialdesignicons-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/fonts/materialdesignicons-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/fonts/materialdesignicons-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/fonts/materialdesignicons-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/fonts/materialdesignicons-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/b-company-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/banner-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/banner/single-page-banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/banner/single-page-banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/banner/single-page-banner3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/blog/blog-d-s-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/blog/blog-details-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/blog/l-news/l-news-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/blog/l-news/l-news-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/blog/l-news/l-news-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/blog/like-post-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/blog/like-post-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/blog/recent-post/recent-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/blog/recent-post/recent-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/blog/trending-post/t-post-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/blog/trending-post/t-post-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/blog/trending-post/t-post-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/clients/client-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/clients/client-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/clients/client-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/clients/client-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/clients/client-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/clients/client-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/comment-user/comment-user-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/comment-user/comment-user-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/fav-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/footer-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/footer-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/home-slider/slider-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/home-slider/slider-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/inbox-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/phone-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/place-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s-icon-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s-icon-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s-icon-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s-icon-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s-icon-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s-icon-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s-icon-hover-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s-icon-hover-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s-icon-hover-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s-icon-hover-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s-icon-hover-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s-icon-hover-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s2-icon-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s2-icon-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s2-icon-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s2-icon-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s2-icon-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s2-icon-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s2-icon-hover-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s2-icon-hover-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s2-icon-hover-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s2-icon-hover-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s2-icon-hover-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/s2-icon-hover-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/icon/video-puse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/logo-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/map-marker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/pre-cons-left.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/pre-cons-right.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-2/project-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-2/project-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-2/project-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-2/project-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-2/project-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-2/project-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-grid-three/project-g-three-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-grid-three/project-g-three-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-grid-three/project-g-three-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-grid-three/project-g-three-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-grid-three/project-g-three-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-grid-three/project-g-three-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-grid-three/project-g-three-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-grid-three/project-g-three-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-grid-three/project-g-three-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-grid-two/project-g-two-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-grid-two/project-g-two-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-grid-two/project-g-two-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-grid-two/project-g-two-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-grid-two/project-g-two-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-grid-two/project-g-two-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-single-slider/project-s-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-single-slider/project-s-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-single-slider/project-thumb-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-single-slider/project-thumb-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-single-slider/project-thumb-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-single-slider/project-thumb-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-single-slider/project-thumb-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-single-slider/project-thumb-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-single-slider/project-thumb-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-single-slider/project-thumb-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-single-slider/project-thumb-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-three-column/project-three-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-three-column/project-three-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-three-column/project-three-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-three-column/project-three-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-three-column/project-three-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-three-column/project-three-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-three-column/project-three-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-three-column/project-three-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-three-column/project-three-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-two-column/project-two-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-two-column/project-two-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-two-column/project-two-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-two-column/project-two-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-two-column/project-two-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/project/project-two-column/project-two-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/quoto-slider-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/service-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/team/team-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/team/team-2/team-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/team/team-2/team-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/team/team-2/team-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/team/team-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/testimonials/test-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/video-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/who-we.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/img/work-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/js/gmaps.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/js/jquery-2.2.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/js/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/scss/_banner.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/scss/_blog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/scss/_button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/scss/_contact.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/scss/_counter.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/scss/_feature.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/scss/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/scss/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/scss/_portfolio.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/scss/_predefin.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/scss/_service.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/scss/_slider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/scss/_team.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/animate-css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/animate-css/site.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/animate-css/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/bootstrap-selector/css/bootstrap-select.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/bootstrap-selector/js/bootstrap-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/counterup/jquery.counterup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/counterup/waypoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/flex-slider/flexslider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/flex-slider/jquery.flexslider-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/isotope/imagesloaded.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/isotope/isotope.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/magnific-popup/jquery.magnific-popup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/magnific-popup/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/owl-carousel/assets/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/owl-carousel/assets/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/owl-carousel/assets/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/owl-carousel/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/assets/coloredbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/assets/gridtile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/assets/gridtile_3x3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/assets/gridtile_3x3_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/assets/gridtile_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/assets/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/assets/sources/fb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/assets/sources/fr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/assets/sources/ig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/assets/sources/post.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/assets/sources/revolution_slide1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/assets/sources/revolution_slide2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/assets/sources/tw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/assets/sources/vm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/assets/sources/wc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/assets/sources/yt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/assets/svg/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/assets/svg/svg.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/closedhand.cur" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/layers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/navigation-skins/ares.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/navigation-skins/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/navigation-skins/dione.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/navigation-skins/erinyen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/navigation-skins/gyges.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/navigation-skins/hades.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/navigation-skins/hebe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/navigation-skins/hephaistos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/navigation-skins/hermes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/navigation-skins/hesperiden.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/navigation-skins/metis.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/navigation-skins/persephone.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/navigation-skins/uranus.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/navigation-skins/zeus.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/navigation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/openhand.cur" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/settings-ver.5.3.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/css/settings.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/font-awesome/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/pe-icon-7-stroke/css/helper.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/pe-icon-7-stroke/css/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/pe-icon-7-stroke/fonts/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/pe-icon-7-stroke/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/revicons/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/revicons/revicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/revicons/revicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/revicons/revicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/fonts/revicons/revicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/info.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/revolution.extension.actions.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/revolution.extension.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/revolution.extension.migration.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/revolution.extension.navigation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/revolution.extension.parallax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/revolution.extension.video.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/source/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/source/revolution.extension.actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/source/revolution.extension.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/source/revolution.extension.kenburn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/source/revolution.extension.layeranimation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/source/revolution.extension.migration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/source/revolution.extension.navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/source/revolution.extension.parallax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/source/revolution.extension.slideanims.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/extensions/source/revolution.extension.video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/jquery.themepunch.enablelog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/jquery.themepunch.revolution.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/jquery.themepunch.tools.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/source/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/source/jquery.themepunch.enablelog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/source/jquery.themepunch.revolution.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/js/source/jquery.themepunch.tools.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/php/facebook/class-facebook.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/php/flickr/class-flickr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/php/instagram/class-instagram.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/php/twitter/RestApi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/php/twitter/class-twitter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/php/twitter/connection/Application.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/php/twitter/connection/ConnectionAbstract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/php/twitter/connection/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/php/vimeo/class-vimeo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/revolution/php/youtube/class-youtube.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/tweet/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/tweet/min/scripts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/tweet/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/tweet/tweet-carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web/vendors/tweet/tweetie.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/web/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/web/serivicios/carwash.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/web/serivicios/labdiesel.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/web/serivicios/mecanicageneral.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/web/venta/venta.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +337,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/User.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -49,11 +349,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="187">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -88,11 +388,11 @@
         <option value="$PROJECT_DIR$/../SysHotel/resources/views/layouts/header.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/config/auth.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
       </list>
     </option>
   </component>
@@ -284,6 +584,13 @@
             <path>
               <item name="Lab_Diesel" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lab_Diesel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab_Diesel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab_Diesel" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -297,6 +604,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -329,18 +637,18 @@
       <workItem from="1550003707811" duration="1848000" />
       <workItem from="1550009419091" duration="44000" />
       <workItem from="1550071311108" duration="1245000" />
-      <workItem from="1550073057871" duration="3003000" />
+      <workItem from="1550073057871" duration="3311000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6140000" />
+    <option name="totallyTimeSpent" value="6448000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2602118" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2602118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -353,7 +661,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -578,13 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/auth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -599,6 +900,13 @@
           <folding>
             <element signature="e#23#63#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
