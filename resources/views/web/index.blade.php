@@ -62,6 +62,7 @@
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                     <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    <li><a href=""><i class="fa fa-compact-disc"></i>Intranet</a></li>
                 </ul>
             </div>
         </div>
@@ -120,7 +121,7 @@
         <ul>
             <li data-index="rs-2972" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="img/home-slider/slider-1.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                 <!-- MAIN IMAGE -->
-                <img src="img/home-slider/slider-1.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                <img src="{{asset('web/img/home-slider/slider-1.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
                 <!-- LAYERS -->
                 <div class="slider_text_box">
                     <div class="tp-caption first_text"
@@ -164,7 +165,7 @@
             </li>
             <li data-index="rs-2973" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="img/home-slider/slider-1.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Web Show" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                 <!-- MAIN IMAGE -->
-                <img src="img/home-slider/slider-2.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                <img src="{{asset('web/img/home-slider/slider-2.jpg')}}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
                 <!-- LAYERS -->
                 <div class="slider_text_box2">
                     <div class="tp-caption first_text"
@@ -259,7 +260,7 @@
             </div>
             <div class="col-md-7">
                 <div class="who_we_image">
-                    <img src="img/who-we.jpg" alt="">
+                    <img src="{{asset('web/img/who-we.jpg')}}" alt="">
                 </div>
             </div>
         </div>
@@ -281,8 +282,8 @@
                     <div class="service2_item_inner">
                         <div class="service2_item_inner_content">
                             <div class="service_icon">
-                                <img src="img/icon/s2-icon-1.png" alt="">
-                                <img src="img/icon/s2-icon-hover-1.png" alt="">
+                                <img src="{{asset('web/img/icon/s2-icon-1.png')}}" alt="">
+                                <img src="{{asset('web/img/icon/s2-icon-hover-1.png')}}" alt="">
                             </div>
                             <h4>Laboratorios DIESEL</h4>
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem-que laudantium totam rem aperiam.</p>
@@ -296,8 +297,8 @@
                     <div class="service2_item_inner">
                         <div class="service2_item_inner_content">
                             <div class="service_icon">
-                                <img src="img/icon/s2-icon-2.png" alt="">
-                                <img src="img/icon/s2-icon-hover-2.png" alt="">
+                                <img src="{{asset('web/img/icon/s2-icon-2.png')}}" alt="">
+                                <img src="{{asset('web/img/icon/s2-icon-hover-2.png')}}" alt="">
                             </div>
                             <h4>Venta de Repuestos</h4>
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem-que laudantium totam rem aperiam.</p>
@@ -311,8 +312,8 @@
                     <div class="service2_item_inner">
                         <div class="service2_item_inner_content">
                             <div class="service_icon">
-                                <img src="img/icon/s2-icon-6.png" alt="">
-                                <img src="img/icon/s2-icon-hover-6.png" alt="">
+                                <img src="{{asset('web/img/icon/s2-icon-6.png')}}" alt="">
+                                <img src="{{asset('web/img/icon/s2-icon-hover-6.png')}}" alt="">
                             </div>
                             <h4>Mecánica General</h4>
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem-que laudantium totam rem aperiam.</p>
@@ -326,8 +327,8 @@
                     <div class="service2_item_inner">
                         <div class="service2_item_inner_content">
                             <div class="service_icon">
-                                <img src="img/icon/s2-icon-3.png" alt="">
-                                <img src="img/icon/s2-icon-hover-3.png" alt="">
+                                <img src="{{asset('web/img/icon/s2-icon-3.png')}}" alt="">
+                                <img src="{{asset('web/img/icon/s2-icon-hover-3.png')}}" alt="">
                             </div>
                             <h4>Car Wash</h4>
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem-que laudantium totam rem aperiam.</p>
@@ -363,7 +364,7 @@
             <div class="col-md-9">
                 <div class="our_project_details">
                     <div class="project_item building isolation tiling">
-                        <img src="img/project/project-1.jpg" alt="">
+                        <img src="{{asset('web/img/project/project-1.jpg')}}" alt="">
                         <div class="project_hover">
                             <div class="project_hover_inner">
                                 <div class="project_hover_content">
@@ -375,7 +376,7 @@
                         </div>
                     </div>
                     <div class="project_item building isolation plumbing">
-                        <img src="img/project/project-2.jpg" alt="">
+                        <img src="{{asset('web/img/project/project-2.jpg')}}" alt="">
                         <div class="project_hover">
                             <div class="project_hover_inner">
                                 <div class="project_hover_content">
@@ -387,7 +388,7 @@
                         </div>
                     </div>
                     <div class="project_item building interior design">
-                        <img src="img/project/project-3.jpg" alt="">
+                        <img src="{{asset('web/img/project/project-3.jpg')}}" alt="">
                         <div class="project_hover">
                             <div class="project_hover_inner">
                                 <div class="project_hover_content">
@@ -399,7 +400,7 @@
                         </div>
                     </div>
                     <div class="project_item interior isolation plumbing">
-                        <img src="img/project/project-4.jpg" alt="">
+                        <img src="{{asset('web/img/project/project-4.jpg')}}" alt="">
                         <div class="project_hover">
                             <div class="project_hover_inner">
                                 <div class="project_hover_content">
@@ -411,7 +412,7 @@
                         </div>
                     </div>
                     <div class="project_item interior design tiling">
-                        <img src="img/project/project-5.jpg" alt="">
+                        <img src="{{asset('web/img/project/project-5.jpg')}}" alt="">
                         <div class="project_hover">
                             <div class="project_hover_inner">
                                 <div class="project_hover_content">
@@ -423,7 +424,7 @@
                         </div>
                     </div>
                     <div class="project_item design plumbing tiling">
-                        <img src="img/project/project-6.jpg" alt="">
+                        <img src="{{asset('web/img/project/project-6.jpg')}}" alt="">
                         <div class="project_hover">
                             <div class="project_hover_inner">
                                 <div class="project_hover_content">
@@ -490,7 +491,7 @@
             <div class="col-md-4 col-sm-6">
                 <div class="latest_news_item">
                     <div class="news_image">
-                        <img src="img/blog/l-news/l-news-1.jpg" alt="">
+                        <img src="{{asset('web/img/blog/l-news/l-news-1.jpg')}}" alt="">
                         <div class="l_date">
                             <h5>14</h5>
                             <h6>Aug</h6>
@@ -512,7 +513,7 @@
             <div class="col-md-4 col-sm-6">
                 <div class="latest_news_item">
                     <div class="news_image">
-                        <img src="img/blog/l-news/l-news-2.jpg" alt="">
+                        <img src="{{asset('web/img/blog/l-news/l-news-2.jpg')}}" alt="">
                         <div class="l_date">
                             <h5>14</h5>
                             <h6>Aug</h6>
@@ -534,7 +535,7 @@
             <div class="col-md-4 col-sm-6">
                 <div class="latest_news_item">
                     <div class="news_image">
-                        <img src="img/blog/l-news/l-news-3.jpg" alt="">
+                        <img src="{{asset('web/img/blog/l-news/l-news-3.jpg')}}" alt="">
                         <div class="l_date">
                             <h5>14</h5>
                             <h6>Aug</h6>
@@ -563,22 +564,22 @@
     <div class="container">
         <div class="clients_slider owl-carousel">
             <div class="item">
-                <img src="img/clients/client-1.png" alt="">
+                <img src="{{asset('web/img/clients/client-1.png')}}" alt="">
             </div>
             <div class="item">
-                <img src="img/clients/client-2.png" alt="">
+                <img src="{{asset('web/img/clients/client-2.png')}}" alt="">
             </div>
             <div class="item">
-                <img src="img/clients/client-3.png" alt="">
+                <img src="{{asset('web/img/clients/client-3.png')}}" alt="">
             </div>
             <div class="item">
-                <img src="img/clients/client-4.png" alt="">
+                <img src="{{asset('web/img/clients/client-4.png')}}" alt="">
             </div>
             <div class="item">
-                <img src="img/clients/client-5.png" alt="">
+                <img src="{{asset('web/img/clients/client-5.png')}}" alt="">
             </div>
             <div class="item">
-                <img src="img/clients/client-6.png" alt="">
+                <img src="{{asset('web/img/clients/client-6.png')}}" alt="">
             </div>
         </div>
     </div>
@@ -598,7 +599,7 @@
             <div class="col-md-4">
                 <div class="media">
                     <div class="media-left">
-                        <img src="img/icon/place-icon.png" alt="">
+                        <img src="{{asset('web/img/icon/place-icon.png')}}" alt="">
                     </div>
                     <div class="media-body">
                         <h4>Ubicanos en :</h4>
@@ -609,7 +610,7 @@
             <div class="col-md-4">
                 <div class="media">
                     <div class="media-left">
-                        <img src="img/icon/phone-icon.png" alt="">
+                        <img src="{{asset('web/img/icon/phone-icon.png')}}" alt="">
                     </div>
                     <div class="media-body">
                         <h5>(01) 547 7201</h5>
@@ -620,7 +621,7 @@
             <div class="col-md-4">
                 <div class="media">
                     <div class="media-left">
-                        <img src="img/icon/inbox-icon.png" alt="">
+                        <img src="{{asset('web/img/icon/inbox-icon.png')}}" alt="">
                     </div>
                     <div class="media-body">
                         <p>ocollantes@overhauldiesel.com.pe</p>
