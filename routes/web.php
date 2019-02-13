@@ -12,6 +12,16 @@
 */
 
 Route::get('/', function () {
+<<<<<<< HEAD
     return view('web.index');
 });
 Route::get('login','Auth/LoginController@');
+=======
+
+    return view('web.index');
+});
+
+Auth::routes();
+
+
+>>>>>>> afe9cf188fabf55795198a33e674dbcb5b96259a
