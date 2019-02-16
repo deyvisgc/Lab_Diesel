@@ -15,26 +15,23 @@ Route::get('/', function () {
 
     return view('web.index');
 });
-Route::get('login','Auth/LoginController@Login');
+
+
 Route::resource('venta','VentaController');
 
-
-
+Route::resource('servicio','tiposerviciocontroller');
+Route::resource('Registro', 'imagencontroller');
+Route::resource('usuario','usuarioController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('Registro', 'imagencontroller');
+
+
 Route::get('/','imagencontroller@listar');
 Route::get('actualizar/{id_imagen}','imagencontroller@cargar');
-Route::resource('servicio','tiposerviciocontroller');
+
 Route::get('servicioInactivo','tiposerviciocontroller@inactivo');
 Route::get('delete/{id_tiposervicio}','tiposerviciocontroller@eliminar');
 
 Route::get('eliminar/{id_imagen}','imagencontroller@Eliminar');
-
-
-
-
-
-
 

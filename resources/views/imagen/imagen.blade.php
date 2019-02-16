@@ -316,6 +316,7 @@
         var tabla;
         var tabla1;
         var tabla2;
+        var pdrs;
         $(document).ready( function () {
           tabla =   $('#tb_imagen1').DataTable({
 
@@ -377,6 +378,10 @@
             tabla2=   $('#tb_imagen3').DataTable();
         } );
         } );
+        function cambiar(){
+            pdrs = document.getElementById('file-upload').files[0].name;
+            document.getElementById('info').innerHTML = pdrs;
+        }
     $('#btnGuardarImagen').click(guardarImagen);
     $('#btnupdateImagen').click(updateimagen);
     function guardarImagen(e){
@@ -416,6 +421,8 @@
 
                     $('#tipo_Servicio').val("");
                     $('#file-upload imagen').val("");
+                    $("#info").html("");
+
 
 
                     swal({
@@ -435,10 +442,7 @@
 
     }
 
-        function cambiar(){
-            var pdrs = document.getElementById('file-upload').files[0].name;
-            document.getElementById('info').innerHTML = pdrs;
-        }
+
         function Actualizar(id_imagen) {
             $('#mupdate').modal('show');
             if (id_imagen){

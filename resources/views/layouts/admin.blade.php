@@ -114,7 +114,7 @@
                     </a>
                     <div class="collapse" id="form-elements">
                         <ul class="nav flex-column sub-menu">
-                            <li class="nav-item"><a class="nav-link" href="{{url('registrar')}}">Registrar Usuario</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{url('usuario')}}">Registrar Usuario</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{url('getUser')}}">Listar Usuarios</a></li>
                         </ul>
                     </div>
