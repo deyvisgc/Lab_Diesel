@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .imagen1{
+            height: 275px;
+            width: 275px;
+
+        }
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -356,15 +363,40 @@
                     </div>
                     <ul class="our_project_filter">
                         <li class="active" data-filter="*"><a href="#">Laboratorio DIESEL</a></li>
-                        <li data-filter=".building"><a href="#">Mecanica General</a></li>
+                        <li data-filter=".hola"><a href="#">Mecanica General</a></li>
                         <li data-filter=".interior"><a href="#">Car Wash</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-9">
+
+
                 <div class="our_project_details">
-                    <div class="project_item building isolation tiling">
-                        <img src="{{asset('web/img/project/project-1.jpg')}}" alt="">
+
+                    @foreach($imagen as $im)
+                        @if($im->id_tipo_servicio===1)
+                            <div class="project_item building isolation tiling">
+
+                                <img  src="{{asset('Imagenes/laboratorios/'.$im->img_ruta)}}" class="imagen1" alt="">
+                                <div class="project_hover">
+                                    <div class="project_hover_inner">
+                                        <div class="project_hover_content">
+                                            <a href="#"><h4>Jahanara Vila</h4></a>
+                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
+                                            <a class="view_btn" href="#">View Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @endif
+
+                    @endforeach
+
+                        @foreach($imagen1 as $ima)
+@if($ima->id_tipo_servicio===1)
+                    <div style="display: none;" class="project_item hola isolation plumbing">
+
+                            <img  src="{{asset('Imagenes/laboratorios/'.$ima->img_ruta)}}" class="imagen1" alt="">
                         <div class="project_hover">
                             <div class="project_hover_inner">
                                 <div class="project_hover_content">
@@ -375,67 +407,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project_item building isolation plumbing">
-                        <img src="{{asset('web/img/project/project-2.jpg')}}" alt="">
-                        <div class="project_hover">
-                            <div class="project_hover_inner">
-                                <div class="project_hover_content">
-                                    <a href="#"><h4>Jahanara Vila</h4></a>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
-                                    <a class="view_btn" href="#">View Project</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project_item building interior design">
-                        <img src="{{asset('web/img/project/project-3.jpg')}}" alt="">
-                        <div class="project_hover">
-                            <div class="project_hover_inner">
-                                <div class="project_hover_content">
-                                    <a href="#"><h4>Jahanara Vila</h4></a>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
-                                    <a class="view_btn" href="#">View Project</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project_item interior isolation plumbing">
-                        <img src="{{asset('web/img/project/project-4.jpg')}}" alt="">
-                        <div class="project_hover">
-                            <div class="project_hover_inner">
-                                <div class="project_hover_content">
-                                    <a href="#"><h4>Jahanara Vila</h4></a>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
-                                    <a class="view_btn" href="#">View Project</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project_item interior design tiling">
-                        <img src="{{asset('web/img/project/project-5.jpg')}}" alt="">
-                        <div class="project_hover">
-                            <div class="project_hover_inner">
-                                <div class="project_hover_content">
-                                    <a href="#"><h4>Jahanara Vila</h4></a>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
-                                    <a class="view_btn" href="#">View Project</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project_item design plumbing tiling">
-                        <img src="{{asset('web/img/project/project-6.jpg')}}" alt="">
-                        <div class="project_hover">
-                            <div class="project_hover_inner">
-                                <div class="project_hover_content">
-                                    <a href="#"><h4>Jahanara Vila</h4></a>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
-                                    <a class="view_btn" href="#">View Project</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   @endif
+
+                            @endforeach
                 </div>
+
             </div>
         </div>
     </div>
@@ -727,5 +703,17 @@
 <script src="{{asset('web/js/gmaps.min.js')}}"></script>
 
 <script src="{{asset('web/js/theme.js')}}"></script>
+<script>
+
+    function muestra_oculta(id){
+        if (document.getElementById){ //se obtiene el id
+            var el = document.getElementById(id); //se define la variable "el" igual a nuestro div
+            el.style.display = (el.style.display == 'none') ? 'block' : 'none'; //damos un atributo display:none que oculta el div
+        }
+    }
+    window.onload = function(){/*hace que se cargue la función lo que predetermina que div estará oculto hasta llamar a la función nuevamente*/
+        muestra_oculta('contenido');/* "contenido_a_mostrar" es el nombre que le dimos al DIV */
+    }
+</script>
 </body>
 </html>

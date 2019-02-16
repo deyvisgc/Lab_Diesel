@@ -12,16 +12,25 @@
 */
 
 Route::get('/', function () {
-<<<<<<< HEAD
-    return view('web.index');
-});
-Route::get('login','Auth/LoginController@');
-=======
 
     return view('web.index');
 });
 
 Auth::routes();
 
+Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('Registro', 'imagencontroller');
+Route::get('/','imagencontroller@listar');
+Route::get('actualizar/{id_imagen}','imagencontroller@cargar');
+Route::resource('servicio','tiposerviciocontroller');
+Route::get('servicioInactivo','tiposerviciocontroller@inactivo');
+Route::get('delete/{id_tiposervicio}','tiposerviciocontroller@eliminar');
 
->>>>>>> afe9cf188fabf55795198a33e674dbcb5b96259a
+Route::get('eliminar/{id_imagen}','imagencontroller@Eliminar');
+
+
+
+
+
+
+

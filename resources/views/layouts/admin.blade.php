@@ -12,13 +12,16 @@
     <link rel="stylesheet" href="{{asset('vendors/css/vendor.bundle.base.css')}}">
     <link rel="stylesheet" href="{{asset('vendors/css/vendor.bundle.addons.css')}}">
     <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}">
+
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.11/dist/sweetalert2.min.css">
     <link href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
 
     <link rel="stylesheet" href="{{asset('css/estilos.css')}}">
-    <link rel="stylesheet" href="{{asset('css/modal.css')}}">
+    <link rel="stylesheet" href="{{asset('css/tabs.css')}}">
+    <link rel="stylesheet" href="{{asset('css/model-delete.css')}}">
     <!-- endinject -->
 </head>
 <body>
@@ -125,8 +128,8 @@
                     </a>
                     <div class="collapse" id="page-layouts">
                         <ul class="nav flex-column sub-menu">
-                            <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="{{url('cliente')}}">Cliente</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="{{url('habitacion')}}">Habitacion</a></li>
+                            <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="{{url('cliente')}}">Imagenes</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="{{url('servicio')}}">Tipo Servicio</a></li>
                             <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="{{url('Piso')}}">Niveles</a></li>
                             <li class="nav-item"> <a class="nav-link" href="{{url('tipo_Cliente')}}">Tipo Habitacion</a></li>
 
@@ -173,6 +176,8 @@
 <script src="{{asset('js/misc.js')}}"></script>
 <script src="{{asset('js/settings.js')}}"></script>
 <script src="{{asset('js/todolist.js')}}"></script>
+
+
 
 <!-- endinject -->
 <!-- Custom js for this page-->
