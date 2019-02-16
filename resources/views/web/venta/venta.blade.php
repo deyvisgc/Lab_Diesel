@@ -7,25 +7,25 @@
 
     <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Construction - WeBuilder Template</title>
+    <title>Ventas</title>
 
     <!-- Icon css link -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="{{asset('web/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{asset('web/css/materialdesignicons.min.css')}}" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{asset('web/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Rev slider css -->
-    <link href="vendors/revolution/css/settings.css" rel="stylesheet">
-    <link href="vendors/revolution/css/layers.css" rel="stylesheet">
-    <link href="vendors/revolution/css/navigation.css" rel="stylesheet">
-    <link href="vendors/animate-css/animate.css" rel="stylesheet">
-    <link href="vendors/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="{{asset('web/vendors/revolution/css/settings.css')}}" rel="stylesheet">
+    <link href="{{asset('web/vendors/revolution/css/layers.css')}}" rel="stylesheet">
+    <link href="{{asset('web/vendors/revolution/css/navigation.css')}}" rel="stylesheet">
+    <link href="{{asset('web/vendors/animate-css/animate.css')}}" rel="stylesheet">
+    <link href="{{asset('web/vendors/owl-carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
 
     <!-- Extra plugin css -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
+    <link href="{{asset('web/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('web/css/responsive.css')}}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,6 +33,16 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- BEGIN JIVOSITE CODE {literal} -->
+    <script type='text/javascript'>
+        (function(){ var widget_id = 'CwE3XnL9mJ';var d=document;var w=window;function l(){
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+            s.src = '//code.jivosite.com/script/widget/'+widget_id
+            ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+            if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+            else{w.addEventListener('load',l,false);}}})();
+    </script>
+    <!-- {/literal} END JIVOSITE CODE -->
 </head>
 <body>
 
@@ -137,7 +147,7 @@
         <div class="row our_project_details">
             <div class="col-md-3 col-sm-12 col-xs-12 building isolation interior">
                 <div style="border: solid rgba(192,178,195,0.27) 1px; padding-top: 5px;border-radius: 5px;">
-                    <img style="margin-left: 5px;" class="img-responsive" src="img/project/project-grid-three/project-g-three-1.jpg" alt="no cargo la imagen" width="250" height="250">
+                    <img style="margin-left: 5px;" class="img-responsive" src="{{asset('web/img/project/project-grid-three/project-g-three-1.jpg')}}" alt="no cargo la imagen" width="250" height="250">
                     <div style="margin-top: 10px; background-color: #f6e9ff;padding: 15px 0px 15px 0px;">
                         <div class="text-center">
                             <a href="#"><h5 class="text-center" style="color:black; padding-bottom: 5px; height: 90px">Manguera hidroaulica idrocarnoasnd aosdnaosdn </h5></a>
@@ -158,7 +168,7 @@
             <div class="col-md-4">
                 <div class="media">
                     <div class="media-left">
-                        <img src="img/icon/place-icon.png" alt="">
+                        <img src="{{asset('web/img/icon/place-icon.png')}}" alt="">
                     </div>
                     <div class="media-body">
                         <h4>Ubicanos en :</h4>
@@ -169,7 +179,7 @@
             <div class="col-md-4">
                 <div class="media">
                     <div class="media-left">
-                        <img src="img/icon/phone-icon.png" alt="">
+                        <img src="{{asset('web/img/icon/phone-icon.png')}}" alt="">
                     </div>
                     <div class="media-body">
                         <h5>(01) 547 7201</h5>
@@ -180,7 +190,7 @@
             <div class="col-md-4">
                 <div class="media">
                     <div class="media-left">
-                        <img src="img/icon/inbox-icon.png" alt="">
+                        <img src="{{asset('web/img/icon/inbox-icon.png')}}" alt="">
                     </div>
                     <div class="media-body">
                         <p>ocollantes@overhauldiesel.com.pe</p>
@@ -261,28 +271,28 @@
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-2.2.4.js"></script>
+<script src="{{asset('web/js/jquery-2.2.4.js')}}"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+<script src="{{asset('web/js/bootstrap.min.js')}}"></script>
 <!-- Rev slider js -->
-<script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
-<script src="vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
-<script src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="{{asset('web/vendors/revolution/js/jquery.themepunch.tools.min.js')}}"></script>
+<script src="{{asset('web/vendors/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
+<script src="{{asset('web/vendors/revolution/js/extensions/revolution.extension.video.min.js')}}"></script>
+<script src="{{asset('web/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+<script src="{{asset('web/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+<script src="{{asset('web/vendors/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
 
-<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-<script src="vendors/isotope/isotope.pkgd.min.js"></script>
-<script src="vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="vendors/counterup/waypoints.min.js"></script>
-<script src="vendors/counterup/jquery.counterup.min.js"></script>
-<script src="vendors/flex-slider/jquery.flexslider-min.js"></script>
+<script src="{{asset('web/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+<script src="{{asset('web/vendors/isotope/imagesloaded.pkgd.min.js')}}"></script>
+<script src="{{asset('web/vendors/isotope/isotope.pkgd.min.js')}}"></script>
+<script src="{{asset('web/vendors/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{asset('web/vendors/counterup/waypoints.min.js')}}"></script>
+<script src="{{asset('web/vendors/counterup/jquery.counterup.min.js')}}"></script>
+<script src="{{asset('web/vendors/flex-slider/jquery.flexslider-min.js')}}"></script>
 
 <!--gmaps Js-->
-<script src="js/gmaps.min.js"></script>
+<script src="{{asset('web/js/gmaps.min.js')}}"></script>
 
-<script src="js/theme.js"></script>
+<script src="{{asset('web/js/theme.js')}}"></script>
 </body>
 </html>

@@ -15,6 +15,10 @@ Route::get('/', function () {
 
     return view('web.index');
 });
+Route::get('login','Auth/LoginController@Login');
+Route::resource('venta','VentaController');
+
+
 
 Auth::routes();
 

@@ -38,6 +38,6 @@ class LoginController extends Controller
     }
 
     public function Login(){
-        return view();
+        return view('auth.login');
     }
 }
