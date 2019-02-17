@@ -87,7 +87,12 @@
                 <li class="nav-item nav-profile">
                     <div class="nav-link">
                         <div class="profile-image">
-                            <img src="images/faces/face5.jpg" alt="image"/>
+                            <form id="FrmImagen" action="{{url('/CambiarImagen')}}"  >
+                                <input type="hidden" id="iduser" value="{{Auth::user()->idusuarios}}">
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                <input type="file" id="imagen" name="imagen" style="display: none;">
+                            </form>
+                            <img src="{{asset('Imagenes/Usuario/'.Auth::user()->imagen)}}" id="avatar_img" alt="profile"/>
                         </div>
                         <div class="profile-name">
                             <p class="name">
@@ -115,7 +120,6 @@
                     <div class="collapse" id="form-elements">
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"><a class="nav-link" href="{{url('usuario')}}">Registrar Usuario</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{url('getUser')}}">Listar Usuarios</a></li>
                         </ul>
                     </div>
                 </li>
@@ -128,7 +132,7 @@
                     </a>
                     <div class="collapse" id="page-layouts">
                         <ul class="nav flex-column sub-menu">
-                            <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="{{url('cliente')}}">Imagenes</a></li>
+                            <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="{{url('Registro')}}">Imagenes</a></li>
                             <li class="nav-item"> <a class="nav-link" href="{{url('servicio')}}">Tipo Servicio</a></li>
                             <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="{{url('Piso')}}">Niveles</a></li>
                             <li class="nav-item"> <a class="nav-link" href="{{url('tipo_Cliente')}}">Tipo Habitacion</a></li>
@@ -176,6 +180,7 @@
 <script src="{{asset('js/misc.js')}}"></script>
 <script src="{{asset('js/settings.js')}}"></script>
 <script src="{{asset('js/todolist.js')}}"></script>
+<script src="{{asset('js/Imagen.js')}}"></script>
 
 
 
@@ -224,7 +229,49 @@
     }
 </script>
 @yield('script')
+<script>
+    var $imagen,$avatarimagen,$frmImagen;
+    var $id;
 
+    $(document).ready(function () {
+
+        $imagen = $('#imagen');
+        $avatarimagen = $('#avatar_img');
+        $frmImagen = $("#FrmImagen");
+        $id=$("#iduser").val();
+        $avatarimagen.on('click', function () {
+            $imagen.click();
+
+        });
+
+        $imagen.on('change',function () {
+            var formData = new FormData(document.getElementById("FrmImagen"));
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $.ajax({
+                url:'{{url('CambiarImagen')}}/'+$id,
+                dataType:'json',
+                type:'post',
+                data:formData,
+                cache: false,
+                contentType: false,
+                processData: false,
+            })
+                .done(function (data) {
+                    $avatarimagen.attr('src','./Imagenes/Usuario/'+data.foto.imagen);
+                    location.reload();
+
+                }).fail(function () {
+                alert('error al subir la foto loquita');
+
+            })
+        });
+    });
+
+</script>
 <!-- End custom js for this page-->
 </body>
 

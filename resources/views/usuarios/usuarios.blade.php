@@ -23,7 +23,7 @@
                     </p><br>
 
                     <div class="table-responsive">
-                        <table class="table table-striped" id="tb_user" >
+                        <table class="table table-striped" id="tb_user">
                             <thead>
                             <tr>
 
@@ -33,6 +33,7 @@
                                 <th>Estado</th>
                                 <th>Actualizar</th>
                                 <th>Eliminar</th>
+                                <th>estados</th>
                             </tr>
                             </thead>
                         </table>
@@ -42,16 +43,12 @@
 </div>
     </div>
 
-
-
-
-
     <div class="modal fade" id="mUsuario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
 
                 <div class="modal-header">
-                    <h4 class="modal-title" style="padding-left:50px; ">Registrar Imagen de Laboratorio</h4>
+                    <h4 class="modal-title" style="padding-left:50px; ">Registrar Usuarios</h4>
                 </div>
                 <div class="modal-body">
                     <form id="frmUsuario" class="form-horizontal" role="form" enctype="multipart/form-data">
@@ -62,6 +59,8 @@
                                 <div class="form-group">
                                     <label >Usuario</label>
                                     <input id="username" type="text"  class="form-control"  name="username">
+
+
                                     <p class="errorUser text-danger hidden"></p>
                                 </div>
                             </div><br>
@@ -112,7 +111,56 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
+
+    <div class="modal fade" id="mUpdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title" style="padding-left:100px; ">Actualizar Usuarios</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="frmUpdateUser" class="form-horizontal" role="form" enctype="multipart/form-data">
+
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+                                <div class="form-group">
+                                    <label >Usuario</label>
+                                    <input id="userna" type="text"  class="form-control"  name="usuario">
+                                    <input id="iduser" hidden type="text"  class="form-control"  name="username">
+
+                                    <p class="errorUser text-danger hidden"></p>
+                                </div>
+                            </div><br>
+                            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+                                <div class="form-group">
+                                    <label >Correo</label>
+                                    <input id="email" type="email"  class="form-control"  name="email">
+                                    <p class="errorCorreo text-danger hidden"></p>
+                                </div>
+                            </div><br>
+                            <div class="modal-footer">
+                                <button style="margin-left: 200px" type="button" class="btn btn-outline-danger" data-dismiss="modal">Cerrar</button>
+                                <button id="UpdateUser" type="button" class="btn btn-outline-success">Guardar</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                </form>
+            </div>
+
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+
     <!-- Modal  update-->
+
+
+    <!-- Modal  update-->
+
 
       @endsection
 @section('script')
@@ -131,7 +179,7 @@
                 stateSave: true,
                 responsive: true,
                 processing: false,
-                serverSide: true,
+                serverSide: false,
                 language: {
                     "sProcessing": "Procesando...",
                     "sLengthMenu": "Mostrar _MENU_ registros",
@@ -165,14 +213,21 @@
                     {data: 'user_estado', name: 'user_estado'},
                     {
                         "mRender": function (data, type, row) {
-                            return '<a  onclick="Actualizar('+row.id_imagen+')"><button type="button" class="btn btn-outline-info tex "><i class="fa fa-edit fa-lg  text-white" ></button></a>';
+                            return '<a><button type="button" class="btn btn-outline-info editar" data-edit="/usuario/'+row.idusuarios+'/edit"><i class="fa fa-edit fa-lg  text-white" ></button></a>';
                         }
                     },
                     {
                         "mRender": function (data, type, row) {
-                            return '<a onclick="Eliminar('+row.id_imagen+')"><button type="button" class="btn btn-outline-danger"><i class="fa fa-edit fa-lg  text-white" ></button></a>';
+                            return '<a onclick="Delete('+row.idusuarios+')"><button type="button" class="btn btn-outline-danger"><i class="fa fa-edit fa-lg  text-white" ></button></a>';
                         }
                     },
+                    {
+                        "mRender": function (data, type, row) {
+                            return '<a onclick="Elimin('+row.idusuarios+')"><button type="button" class="btn btn-outline-danger"><i class="fa fa-edit fa-lg  text-white" ></button></a>';
+                        }
+                    },
+
+
                 ]
 
 
@@ -181,6 +236,7 @@
 
 
         $("#RegisUser").click(registrar);
+        $('#UpdateUser').click(Actualizar);
 
         function registrar(e){
             e.preventDefault();
@@ -244,6 +300,76 @@
             });
 
         }
+        /*editar usuarios*/
+
+        $('#tb_user').on('click','.editar[data-edit]',function () {
+            var url=$(this).data('edit');
+            $.ajax({
+                url:url,
+                dataType: 'json',
+                type:'get',
+                success:function (response) {
+                    $("#mUpdate").modal('show');
+                    $('#iduser').val(response.idusuarios);
+                    $('#userna').val(response.username);
+                    $("#email").val(response.email);
+
+                }
+            })
+
+
+        });
+        function Actualizar(e) {
+            e.preventDefault();
+            url="usuario/"+$('#iduser').val();
+            var frm=$('#frmUpdateUser');
+            $.ajax({
+                url:url,
+                type:'put',
+                dataType:'json',
+                data:frm.serialize(),
+                success:function (respomse) {
+                    $('.errorUser').addClass('hidden');
+                    $('.errorCorreo').addClass('hidden');
+
+                    if(respomse.errors){
+                        if(respomse.errors.usuario){
+                            $('.errorUser').removeClass('hidden');
+                            $('.errorUser').text(respomse.errors.usuario);
+                        }
+                        if (respomse.errors.email){
+                            $('.errorCorreo').removeClass('hidden');
+                            $('.errorCorreo').text(respomse.errors.email);
+                        }
+                    }
+                    if(respomse.success===true){
+                        $('#mUpdate').modal('hide');
+                        borrarcampos();
+                        swal({
+                            position: 'center',
+                            type: 'success',
+                            title: 'Actuliazado Correctamente',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                        tabla.ajax.reload();
+
+                    }
+
+                },
+                error:function () {
+                    Swal.fire({
+                        type: 'error',
+                        title: 'Oops...',
+                        text: 'Something went wrong!',
+                        footer: '<a href>Why do I have this issue?</a>'
+                    })
+
+                }
+            })
+
+
+        }
         function borrarcampos() {
             $("#username").val("");
             $("#correo").val("");
@@ -252,6 +378,55 @@
             $("#file-upload").val("");
             $("#info").html("");
 
+        }
+        function Delete(idusuarios) {
+            if (idusuarios){
+                Swal.fire({
+                    title: 'Estás seguro?',
+                    text: "No podrás revertir esto.!",
+                    type: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes, delete it!'}).
+                     then((result) => {
+                    if (result.value) {
+                        $.ajax({
+                            url: '{{url('Eliminar')}}/' + idusuarios,
+                            datatype: 'json',
+                            type: 'get',
+                            success: function (data) {
+                                swal({
+                                    position: 'center',
+                                    type: 'success',
+                                    title: 'Eliminado Correctamente',
+                                    showConfirmButton: false,
+                                    timer: 1500
+                                });
+                                tabla.ajax.reload();
+                            },
+                            error: function () {
+                                Swal.fire({
+                                    type: 'error',
+                                    title: 'Oops...',
+                                    text: 'Algo salió mal!',
+
+                                });
+                            }
+                        })
+                    }
+                    else{
+                        Swal.fire({
+                            type: 'error',
+                            title: 'Oops...',
+                            text: 'Something went wrong!',
+
+                        })
+                    }
+                })
+
+            }
+            
         }
     </script>
     @endsection

@@ -11,11 +11,7 @@ use Illuminate\Support\Facades\Input;
 
 class usuarioController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index(Request $request)
     {
         if($request->ajax()){
@@ -63,15 +59,14 @@ class usuarioController extends Controller
             $user->email=$request->email;
             $user->password=bcrypt($request->password);
             $user->user_estado="Activo";
-            if($user->imagen===null){
-                $user->imagen='usuario.jpg';
-            } else{
+            if ($user->imagen==null){
                 if(Input::HasFile('imagen')){
                     $file=Input::file('imagen');
                     $file->move(public_path().'/Imagenes/Usuario',$file->getClientOriginalName());
                     $user->imagen=$file->getClientOriginalName();
+                } else{
+                    $user->imagen='usuario.jpg';
                 }
-
 
             }
             $user->save();
@@ -101,7 +96,9 @@ class usuarioController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user=User::find($id);
+        return response()->json($user);
+
     }
 
     /**
@@ -113,6 +110,20 @@ class usuarioController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $regla=[
+            'usuario'=>'required',
+            'email'=>'required',
+        ];
+        $valida=Validator::make(Input::all(),$regla);
+        if($valida->fails()){
+            return response()->json(array('errors' => $valida->getMessageBag()->toArray()));
+        }else{
+            $user=User::find($id);
+            $user->username=$request->usuario;
+            $user->email=$request->email;
+            $user->save();
+        }
+        return response()->json(array("success"=>true));
         //
     }
 
@@ -122,8 +133,42 @@ class usuarioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function eliminar($id)
     {
-        //
+        $user=User::find($id);
+        $image_path="Imagenes/Usuario/$user->imagen";
+        if(\File::exists(Public_path($image_path))){
+            \File::delete(Public_path($image_path));
+        }else{
+
+            dd('Ruta no Existe.');
+        }
+        $user->delete();
+        return response()->json(array("success"=>true));
+
+
+
+    }
+    public function Registrar(Request $request,$id){
+    $this->validate($request,[
+        'imagen'=>'required |image',
+    ]);
+    $user=User::find($id);
+        $image_path="Imagenes/Usuario/$user->imagen";
+        if(\File::exists(Public_path($image_path))){
+            \File::delete(Public_path($image_path));
+        }
+            if(Input::HasFile('imagen')){
+                $file=Input::file('imagen');
+                $file->move(public_path().'/Imagenes/Usuario',$file->getClientOriginalName());
+                $user->imagen=$file->getClientOriginalName();
+            }
+
+
+        $user->save();
+        $data['succes']=true;
+        $data['foto']=$user;
+        return response()->json($data);
+
     }
 }

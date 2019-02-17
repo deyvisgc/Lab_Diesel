@@ -22,6 +22,7 @@ Route::resource('venta','VentaController');
 Route::resource('servicio','tiposerviciocontroller');
 Route::resource('Registro', 'imagencontroller');
 Route::resource('usuario','usuarioController');
+Route::post('CambiarImagen/{idusuarios}','usuarioController@Registrar');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -32,6 +33,7 @@ Route::get('actualizar/{id_imagen}','imagencontroller@cargar');
 
 Route::get('servicioInactivo','tiposerviciocontroller@inactivo');
 Route::get('delete/{id_tiposervicio}','tiposerviciocontroller@eliminar');
+Route::get('Eliminar/{idusuarios}','usuarioController@eliminar');
 
 Route::get('eliminar/{id_imagen}','imagencontroller@Eliminar');
 
